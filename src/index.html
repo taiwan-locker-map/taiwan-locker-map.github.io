@@ -5,10 +5,40 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description" content="react-datepicker demo by Eason Chang" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link href="index.css" type="text/css" rel="stylesheet" />
+
     <title>台灣置物櫃地圖</title>
   </head>
 
   <body>
-    <h1>台灣置物櫃地圖</h1>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container">
+        <a class="navbar-brand" href="#">台灣置物櫃地圖</a>
+        <div class="navbar-nav">
+          <a class="nav-link active" aria-current="page" href="#">地圖</a>
+          <a class="nav-link" href="#">關於</a>
+        </div>
+      </div>
+    </nav>
+
+    <iframe
+      id="my-google-map"
+      src="https://www.google.com/maps/d/u/2/embed?mid=1gW8QWdqyhAODSdi235C60NqjwhuhZpdl"
+      scrolling="no"
+      frameborder="0"
+    ></iframe>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
