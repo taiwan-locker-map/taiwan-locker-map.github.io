@@ -1,0 +1,20 @@
+{
+  "name": "taiwan-locker-map.github.io",
+  "version": "1.0.0",
+  "description": "Taiwan Locker Map website",
+  "main": "src/index.js",
+  "repository": "https://github.com/taiwan-locker-map/taiwan-locker-map.github.io.git",
+  "author": "Kamigami55 <eason@easonchang.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "rm -rf build && parcel build src/index.html --no-source-maps --out-dir build --public-url '.'",
+    "predeploy": "yarn build",
+    "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.1.0",
+    "parcel-bundler": "^1.12.4",
+    "prettier": "^2.2.1"
+  }
+}
